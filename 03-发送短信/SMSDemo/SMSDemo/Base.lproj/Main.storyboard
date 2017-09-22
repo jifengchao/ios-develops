@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blD-fK-EM8">
+                                <rect key="frame" x="20" y="105" width="335" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="2DE-jh-d2p"/>
+                                </constraints>
+                                <state key="normal" title="应用外发送短信"/>
+                                <connections>
+                                    <action selector="sendSMSOutside" destination="BYZ-38-t0r" eventType="touchUpInside" id="j3C-0N-w2g"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gjN-5b-aeA">
+                                <rect key="frame" x="20" y="175" width="335" height="40"/>
+                                <state key="normal" title="应用内发送短信"/>
+                                <connections>
+                                    <action selector="sendSMSInside" destination="BYZ-38-t0r" eventType="touchUpInside" id="88L-uX-3aW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Is-CR-qma">
+                                <rect key="frame" x="20" y="245" width="335" height="40"/>
+                                <state key="normal" title="直接发送短信"/>
+                                <connections>
+                                    <action selector="sendSMSDirectly" destination="BYZ-38-t0r" eventType="touchUpInside" id="beD-2f-Pri"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3Is-CR-qma" firstAttribute="width" secondItem="blD-fK-EM8" secondAttribute="width" id="5hu-Ec-4V2"/>
+                            <constraint firstItem="3Is-CR-qma" firstAttribute="height" secondItem="blD-fK-EM8" secondAttribute="height" id="AZU-yF-aLG"/>
+                            <constraint firstAttribute="trailing" secondItem="blD-fK-EM8" secondAttribute="trailing" constant="20" id="FCG-Fx-ijx"/>
+                            <constraint firstItem="blD-fK-EM8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Fag-kv-Kzf"/>
+                            <constraint firstItem="gjN-5b-aeA" firstAttribute="width" secondItem="blD-fK-EM8" secondAttribute="width" id="LCH-0o-Cb6"/>
+                            <constraint firstItem="gjN-5b-aeA" firstAttribute="centerX" secondItem="blD-fK-EM8" secondAttribute="centerX" id="SHc-64-jFk"/>
+                            <constraint firstItem="blD-fK-EM8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="85" id="ZqN-OS-L8I"/>
+                            <constraint firstItem="3Is-CR-qma" firstAttribute="centerX" secondItem="blD-fK-EM8" secondAttribute="centerX" id="f9n-OH-3Y4"/>
+                            <constraint firstItem="3Is-CR-qma" firstAttribute="top" secondItem="gjN-5b-aeA" secondAttribute="bottom" constant="30" id="fUd-zq-2rD"/>
+                            <constraint firstItem="gjN-5b-aeA" firstAttribute="top" secondItem="blD-fK-EM8" secondAttribute="bottom" constant="30" id="unM-rl-qaL"/>
+                            <constraint firstItem="gjN-5b-aeA" firstAttribute="height" secondItem="blD-fK-EM8" secondAttribute="height" id="x2C-N3-sHt"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
