@@ -1,0 +1,10 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '10.0'
+
+target 'Demos' do
+    use_frameworks!
+
+    pod 'AFNetworking', '4.0.1'
+    pod 'Masonry','~> 1.1'
+    
+end
