@@ -15,20 +15,24 @@ PODS:
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
   - Masonry (1.1.0)
+  - NIMSDK_LITE (9.2.5)
 
 DEPENDENCIES:
   - AFNetworking (= 4.0.1)
   - Masonry (~> 1.1)
+  - NIMSDK_LITE (= 9.2.5)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - AFNetworking
     - Masonry
+    - NIMSDK_LITE
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  NIMSDK_LITE: 97ef1dab5660faf031d203d55cb8de66e6c73312
 
-PODFILE CHECKSUM: 7e027a4f0882fe743caf568e5372942ee03b9994
+PODFILE CHECKSUM: f84675727011fc104c20ee46b8033113bf844d2c
 
 COCOAPODS: 1.11.3

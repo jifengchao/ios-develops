@@ -6,7 +6,6 @@
 //
 
 #import "LabelsTableViewCell.h"
-#import <Masonry.h>
 
 #import "FEDirectionLabelsFlowLayout.h"
 #import "LabelsCell.h"

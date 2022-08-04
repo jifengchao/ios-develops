@@ -21,6 +21,18 @@
 		280AE30028995820004C72B2 /* LabelsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 280AE2FC2899581F004C72B2 /* LabelsTableViewCell.m */; };
 		280AE30128995820004C72B2 /* FEDirectionLabelsFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 280AE2FE2899581F004C72B2 /* FEDirectionLabelsFlowLayout.m */; };
 		280AE30428995848004C72B2 /* DemoLabelsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 280AE30328995848004C72B2 /* DemoLabelsViewController.m */; };
+		2869B911289B9689006716DE /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2869B907289B9689006716DE /* MBProgressHUD.m */; };
+		2869B912289B9689006716DE /* MBProgressHUD+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 2869B908289B9689006716DE /* MBProgressHUD+Add.m */; };
+		2869B913289B9689006716DE /* hud_warning@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2869B90A289B9689006716DE /* hud_warning@2x.png */; };
+		2869B914289B9689006716DE /* hud_success@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2869B90B289B9689006716DE /* hud_success@2x.png */; };
+		2869B915289B9689006716DE /* hud_info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2869B90C289B9689006716DE /* hud_info@2x.png */; };
+		2869B916289B9689006716DE /* MBProgressHUD+BWMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2869B910289B9689006716DE /* MBProgressHUD+BWMExtension.m */; };
+		2869B91A289B9BB8006716DE /* FEColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2869B918289B9BB8006716DE /* FEColor.m */; };
+		2869B924289B9BED006716DE /* FEChatRoomManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2869B920289B9BED006716DE /* FEChatRoomManager.m */; };
+		2869B925289B9BED006716DE /* FEChatroomNotificationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2869B921289B9BED006716DE /* FEChatroomNotificationHandler.m */; };
+		2869B926289B9BED006716DE /* FEKeyboardToolbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2869B922289B9BED006716DE /* FEKeyboardToolbarView.m */; };
+		2869B927289B9BED006716DE /* FEIMRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2869B923289B9BED006716DE /* FEIMRoomViewController.m */; };
+		28D112BB289B767F0074E28D /* DemoIMAccountsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D112BA289B767F0074E28D /* DemoIMAccountsViewController.m */; };
 		E3D9AC278765B0B8C665ED2C /* Pods_Demos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DB113AEF1493B6DD3DF5698 /* Pods_Demos.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +79,30 @@
 		280AE2FE2899581F004C72B2 /* FEDirectionLabelsFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FEDirectionLabelsFlowLayout.m; sourceTree = "<group>"; };
 		280AE30228995848004C72B2 /* DemoLabelsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoLabelsViewController.h; sourceTree = "<group>"; };
 		280AE30328995848004C72B2 /* DemoLabelsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoLabelsViewController.m; sourceTree = "<group>"; };
+		2869B907289B9689006716DE /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		2869B908289B9689006716DE /* MBProgressHUD+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Add.m"; sourceTree = "<group>"; };
+		2869B90A289B9689006716DE /* hud_warning@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hud_warning@2x.png"; sourceTree = "<group>"; };
+		2869B90B289B9689006716DE /* hud_success@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hud_success@2x.png"; sourceTree = "<group>"; };
+		2869B90C289B9689006716DE /* hud_info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hud_info@2x.png"; sourceTree = "<group>"; };
+		2869B90D289B9689006716DE /* MBProgressHUD+BWMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+BWMExtension.h"; sourceTree = "<group>"; };
+		2869B90E289B9689006716DE /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		2869B90F289B9689006716DE /* MBProgressHUD+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Add.h"; sourceTree = "<group>"; };
+		2869B910289B9689006716DE /* MBProgressHUD+BWMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+BWMExtension.m"; sourceTree = "<group>"; };
+		2869B917289B973A006716DE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		2869B918289B9BB8006716DE /* FEColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FEColor.m; sourceTree = "<group>"; };
+		2869B919289B9BB8006716DE /* FEColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FEColor.h; sourceTree = "<group>"; };
+		2869B91C289B9BED006716DE /* FEChatRoomManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FEChatRoomManager.h; sourceTree = "<group>"; };
+		2869B91D289B9BED006716DE /* FEChatroomNotificationHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FEChatroomNotificationHandler.h; sourceTree = "<group>"; };
+		2869B91E289B9BED006716DE /* FEIMRoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FEIMRoomViewController.h; sourceTree = "<group>"; };
+		2869B91F289B9BED006716DE /* FEKeyboardToolbarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FEKeyboardToolbarView.h; sourceTree = "<group>"; };
+		2869B920289B9BED006716DE /* FEChatRoomManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FEChatRoomManager.m; sourceTree = "<group>"; };
+		2869B921289B9BED006716DE /* FEChatroomNotificationHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FEChatroomNotificationHandler.m; sourceTree = "<group>"; };
+		2869B922289B9BED006716DE /* FEKeyboardToolbarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FEKeyboardToolbarView.m; sourceTree = "<group>"; };
+		2869B923289B9BED006716DE /* FEIMRoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FEIMRoomViewController.m; sourceTree = "<group>"; };
+		28D112B7289B72080074E28D /* 网易云信IM.xmind */ = {isa = PBXFileReference; lastKnownFileType = file; path = "网易云信IM.xmind"; sourceTree = "<group>"; };
+		28D112B8289B72080074E28D /* 网易云信IM-聊天室.xmind */ = {isa = PBXFileReference; lastKnownFileType = file; path = "网易云信IM-聊天室.xmind"; sourceTree = "<group>"; };
+		28D112B9289B767F0074E28D /* DemoIMAccountsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoIMAccountsViewController.h; sourceTree = "<group>"; };
+		28D112BA289B767F0074E28D /* DemoIMAccountsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoIMAccountsViewController.m; sourceTree = "<group>"; };
 		2DB113AEF1493B6DD3DF5698 /* Pods_Demos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DA51EC8E250EF5A84AB4650 /* Pods-Demos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demos.debug.xcconfig"; path = "Target Support Files/Pods-Demos/Pods-Demos.debug.xcconfig"; sourceTree = "<group>"; };
 		A82647C3A04A3C27E781674F /* Pods-Demos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demos.release.xcconfig"; path = "Target Support Files/Pods-Demos/Pods-Demos.release.xcconfig"; sourceTree = "<group>"; };
@@ -129,8 +165,11 @@
 				280AE2C528995469004C72B2 /* SceneDelegate.m */,
 				280AE2C728995469004C72B2 /* ViewController.h */,
 				280AE2C828995469004C72B2 /* ViewController.m */,
+				28D112B6289B71B60074E28D /* 网易云信IM【聊天室】 */,
 				280AE2F62899579B004C72B2 /* 多标签动态宽度计算显示【支持方向】 */,
+				2869B905289B9679006716DE /* Others */,
 				280AE2CA28995469004C72B2 /* Main.storyboard */,
+				2869B917289B973A006716DE /* PrefixHeader.pch */,
 				280AE2CD2899546B004C72B2 /* Assets.xcassets */,
 				280AE2CF2899546B004C72B2 /* LaunchScreen.storyboard */,
 				280AE2D22899546B004C72B2 /* Info.plist */,
@@ -177,6 +216,67 @@
 				280AE2FE2899581F004C72B2 /* FEDirectionLabelsFlowLayout.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		2869B905289B9679006716DE /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				2869B919289B9BB8006716DE /* FEColor.h */,
+				2869B918289B9BB8006716DE /* FEColor.m */,
+				2869B906289B9689006716DE /* MBProgressHUD */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		2869B906289B9689006716DE /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				2869B909289B9689006716DE /* HubImgs */,
+				2869B90E289B9689006716DE /* MBProgressHUD.h */,
+				2869B907289B9689006716DE /* MBProgressHUD.m */,
+				2869B90F289B9689006716DE /* MBProgressHUD+Add.h */,
+				2869B908289B9689006716DE /* MBProgressHUD+Add.m */,
+				2869B90D289B9689006716DE /* MBProgressHUD+BWMExtension.h */,
+				2869B910289B9689006716DE /* MBProgressHUD+BWMExtension.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		2869B909289B9689006716DE /* HubImgs */ = {
+			isa = PBXGroup;
+			children = (
+				2869B90A289B9689006716DE /* hud_warning@2x.png */,
+				2869B90B289B9689006716DE /* hud_success@2x.png */,
+				2869B90C289B9689006716DE /* hud_info@2x.png */,
+			);
+			path = HubImgs;
+			sourceTree = "<group>";
+		};
+		2869B91B289B9BED006716DE /* Room */ = {
+			isa = PBXGroup;
+			children = (
+				2869B91C289B9BED006716DE /* FEChatRoomManager.h */,
+				2869B920289B9BED006716DE /* FEChatRoomManager.m */,
+				2869B91D289B9BED006716DE /* FEChatroomNotificationHandler.h */,
+				2869B921289B9BED006716DE /* FEChatroomNotificationHandler.m */,
+				2869B91E289B9BED006716DE /* FEIMRoomViewController.h */,
+				2869B923289B9BED006716DE /* FEIMRoomViewController.m */,
+				2869B91F289B9BED006716DE /* FEKeyboardToolbarView.h */,
+				2869B922289B9BED006716DE /* FEKeyboardToolbarView.m */,
+			);
+			path = Room;
+			sourceTree = "<group>";
+		};
+		28D112B6289B71B60074E28D /* 网易云信IM【聊天室】 */ = {
+			isa = PBXGroup;
+			children = (
+				28D112B8289B72080074E28D /* 网易云信IM-聊天室.xmind */,
+				28D112B7289B72080074E28D /* 网易云信IM.xmind */,
+				28D112B9289B767F0074E28D /* DemoIMAccountsViewController.h */,
+				28D112BA289B767F0074E28D /* DemoIMAccountsViewController.m */,
+				2869B91B289B9BED006716DE /* Room */,
+			);
+			path = "网易云信IM【聊天室】";
 			sourceTree = "<group>";
 		};
 		486D60EAF3DD03A161160A16 /* Pods */ = {
@@ -301,7 +401,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2869B915289B9689006716DE /* hud_info@2x.png in Resources */,
 				280AE2D12899546B004C72B2 /* LaunchScreen.storyboard in Resources */,
+				2869B913289B9689006716DE /* hud_warning@2x.png in Resources */,
+				2869B914289B9689006716DE /* hud_success@2x.png in Resources */,
 				280AE2CE2899546B004C72B2 /* Assets.xcassets in Resources */,
 				280AE2CC28995469004C72B2 /* Main.storyboard in Resources */,
 			);
@@ -371,12 +474,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				280AE30128995820004C72B2 /* FEDirectionLabelsFlowLayout.m in Sources */,
+				2869B927289B9BED006716DE /* FEIMRoomViewController.m in Sources */,
 				280AE30028995820004C72B2 /* LabelsTableViewCell.m in Sources */,
 				280AE2C928995469004C72B2 /* ViewController.m in Sources */,
+				2869B925289B9BED006716DE /* FEChatroomNotificationHandler.m in Sources */,
 				280AE2C328995469004C72B2 /* AppDelegate.m in Sources */,
+				28D112BB289B767F0074E28D /* DemoIMAccountsViewController.m in Sources */,
+				2869B91A289B9BB8006716DE /* FEColor.m in Sources */,
 				280AE30428995848004C72B2 /* DemoLabelsViewController.m in Sources */,
+				2869B924289B9BED006716DE /* FEChatRoomManager.m in Sources */,
+				2869B912289B9689006716DE /* MBProgressHUD+Add.m in Sources */,
 				280AE2D42899546B004C72B2 /* main.m in Sources */,
+				2869B911289B9689006716DE /* MBProgressHUD.m in Sources */,
+				2869B926289B9BED006716DE /* FEKeyboardToolbarView.m in Sources */,
 				280AE2FF28995820004C72B2 /* LabelsCell.m in Sources */,
+				2869B916289B9689006716DE /* MBProgressHUD+BWMExtension.m in Sources */,
 				280AE2C628995469004C72B2 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -552,6 +664,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YTG8CAG25Z;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Demos/PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Demos/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -581,6 +694,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YTG8CAG25Z;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Demos/PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Demos/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

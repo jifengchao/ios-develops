@@ -6,5 +6,7 @@ target 'Demos' do
 
     pod 'AFNetworking', '4.0.1'
     pod 'Masonry','~> 1.1'
+    #网易云信IM
+    pod 'NIMSDK_LITE', '9.2.5'
     
 end

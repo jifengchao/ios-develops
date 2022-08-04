@@ -8,6 +8,7 @@
 #import "ViewController.h"
 
 #import "DemoLabelsViewController.h"
+#import "DemoIMAccountsViewController.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -30,6 +31,7 @@
     self.datas = @[].mutableCopy;
     
     [self.datas addObject:@"多标签动态宽度计算显示【支持方向】"];
+    [self.datas addObject:@"网易云信IM【聊天室】"];
 }
 
 #pragma mark UITableViewDelegate
@@ -53,6 +55,10 @@
     NSInteger row = indexPath.row;
     if (row == 0) {
         DemoLabelsViewController *vc = [DemoLabelsViewController new];
+        [self.navigationController pushViewController:vc animated:true];
+    }
+    if (row == 1) {
+        DemoIMAccountsViewController *vc = [DemoIMAccountsViewController new];
         [self.navigationController pushViewController:vc animated:true];
     }
 }

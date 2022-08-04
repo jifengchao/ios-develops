@@ -7,8 +7,6 @@
 
 #import "DemoLabelsViewController.h"
 
-#import <Masonry.h>
-
 #import "LabelsTableViewCell.h"
 
 @interface DemoLabelsViewController () <UITableViewDelegate, UITableViewDataSource>
@@ -23,6 +21,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = UIColor.whiteColor;
+    self.navigationItem.title = @"多标签动态宽度计算显示【支持方向】";
     
     [self setupUI];
     self.datas = @[@0, @0, @0].mutableCopy;
