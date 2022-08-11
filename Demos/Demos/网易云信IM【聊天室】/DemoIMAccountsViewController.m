@@ -66,14 +66,16 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     //先退出
-    [[[NIMSDK sharedSDK] loginManager] logout:^(NSError * _Nullable error) {
-    }];
+    if ([[[NIMSDK sharedSDK] loginManager] isLogined]) {
+        [[[NIMSDK sharedSDK] loginManager] logout:^(NSError * _Nullable error) {
+            NSLog(@"logout error %@", error);
+        }];
+    }
 }
 
 - (void)configIM {
     NSString *NIM_ID = kNIM_ID;
     NIMSDKOption *option = [NIMSDKOption optionWithAppKey:NIM_ID];
-    
     [[NIMSDK sharedSDK] registerWithOption:option];
 }
 

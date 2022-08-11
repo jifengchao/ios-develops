@@ -41,8 +41,9 @@
 - (void)enterWithLogin {
     id<NIMChatroomManager> chatroomManager = [[NIMSDK sharedSDK] chatroomManager];
     [self loginWithAccount:self.account token:self.token back:^(NSError *error) {
+        NSLog(@"login error %@", error);
         [chatroomManager enterChatroom:[self enterRequest] completion:^(NSError * _Nullable error, NIMChatroom * _Nullable chatroom, NIMChatroomMember * _Nullable me) {
-            NSLog(@"");
+            NSLog(@"enterChatroom error %@", error);
         }];
     }];
 }
