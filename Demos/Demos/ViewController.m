@@ -9,6 +9,7 @@
 
 #import "DemoLabelsViewController.h"
 #import "DemoIMAccountsViewController.h"
+#import "DemoNumberScrollViewController.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -32,6 +33,7 @@
     
     [self.datas addObject:@"多标签动态宽度计算显示【支持方向】"];
     [self.datas addObject:@"网易云信IM【聊天室】"];
+    [self.datas addObject:@"滚动数字"];
 }
 
 #pragma mark UITableViewDelegate
@@ -59,6 +61,10 @@
     }
     if (row == 1) {
         DemoIMAccountsViewController *vc = [DemoIMAccountsViewController new];
+        [self.navigationController pushViewController:vc animated:true];
+    }
+    if (row == 2) {
+        DemoNumberScrollViewController *vc = [DemoNumberScrollViewController new];
         [self.navigationController pushViewController:vc animated:true];
     }
 }

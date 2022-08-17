@@ -21,6 +21,9 @@
 		280AE30028995820004C72B2 /* LabelsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 280AE2FC2899581F004C72B2 /* LabelsTableViewCell.m */; };
 		280AE30128995820004C72B2 /* FEDirectionLabelsFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 280AE2FE2899581F004C72B2 /* FEDirectionLabelsFlowLayout.m */; };
 		280AE30428995848004C72B2 /* DemoLabelsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 280AE30328995848004C72B2 /* DemoLabelsViewController.m */; };
+		2861542928ACDF1F001E33B5 /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2861542728ACDF1F001E33B5 /* readme.txt */; };
+		2861542A28ACDF1F001E33B5 /* YLNumberScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2861542828ACDF1F001E33B5 /* YLNumberScrollView.m */; };
+		2861542D28ACDF6F001E33B5 /* DemoNumberScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2861542C28ACDF6F001E33B5 /* DemoNumberScrollViewController.m */; };
 		2869B911289B9689006716DE /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2869B907289B9689006716DE /* MBProgressHUD.m */; };
 		2869B912289B9689006716DE /* MBProgressHUD+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 2869B908289B9689006716DE /* MBProgressHUD+Add.m */; };
 		2869B913289B9689006716DE /* hud_warning@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2869B90A289B9689006716DE /* hud_warning@2x.png */; };
@@ -79,6 +82,11 @@
 		280AE2FE2899581F004C72B2 /* FEDirectionLabelsFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FEDirectionLabelsFlowLayout.m; sourceTree = "<group>"; };
 		280AE30228995848004C72B2 /* DemoLabelsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoLabelsViewController.h; sourceTree = "<group>"; };
 		280AE30328995848004C72B2 /* DemoLabelsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoLabelsViewController.m; sourceTree = "<group>"; };
+		2861542628ACDF1F001E33B5 /* YLNumberScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLNumberScrollView.h; sourceTree = "<group>"; };
+		2861542728ACDF1F001E33B5 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		2861542828ACDF1F001E33B5 /* YLNumberScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLNumberScrollView.m; sourceTree = "<group>"; };
+		2861542B28ACDF6F001E33B5 /* DemoNumberScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoNumberScrollViewController.h; sourceTree = "<group>"; };
+		2861542C28ACDF6F001E33B5 /* DemoNumberScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoNumberScrollViewController.m; sourceTree = "<group>"; };
 		2869B907289B9689006716DE /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		2869B908289B9689006716DE /* MBProgressHUD+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Add.m"; sourceTree = "<group>"; };
 		2869B90A289B9689006716DE /* hud_warning@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hud_warning@2x.png"; sourceTree = "<group>"; };
@@ -165,6 +173,7 @@
 				280AE2C528995469004C72B2 /* SceneDelegate.m */,
 				280AE2C728995469004C72B2 /* ViewController.h */,
 				280AE2C828995469004C72B2 /* ViewController.m */,
+				2861542528ACDF1F001E33B5 /* 滚动数字 */,
 				28D112B6289B71B60074E28D /* 网易云信IM【聊天室】 */,
 				280AE2F62899579B004C72B2 /* 多标签动态宽度计算显示【支持方向】 */,
 				2869B905289B9679006716DE /* Others */,
@@ -216,6 +225,18 @@
 				280AE2FE2899581F004C72B2 /* FEDirectionLabelsFlowLayout.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		2861542528ACDF1F001E33B5 /* 滚动数字 */ = {
+			isa = PBXGroup;
+			children = (
+				2861542B28ACDF6F001E33B5 /* DemoNumberScrollViewController.h */,
+				2861542C28ACDF6F001E33B5 /* DemoNumberScrollViewController.m */,
+				2861542628ACDF1F001E33B5 /* YLNumberScrollView.h */,
+				2861542828ACDF1F001E33B5 /* YLNumberScrollView.m */,
+				2861542728ACDF1F001E33B5 /* readme.txt */,
+			);
+			path = "滚动数字";
 			sourceTree = "<group>";
 		};
 		2869B905289B9679006716DE /* Others */ = {
@@ -405,6 +426,7 @@
 				280AE2D12899546B004C72B2 /* LaunchScreen.storyboard in Resources */,
 				2869B913289B9689006716DE /* hud_warning@2x.png in Resources */,
 				2869B914289B9689006716DE /* hud_success@2x.png in Resources */,
+				2861542928ACDF1F001E33B5 /* readme.txt in Resources */,
 				280AE2CE2899546B004C72B2 /* Assets.xcassets in Resources */,
 				280AE2CC28995469004C72B2 /* Main.storyboard in Resources */,
 			);
@@ -478,12 +500,14 @@
 				280AE30028995820004C72B2 /* LabelsTableViewCell.m in Sources */,
 				280AE2C928995469004C72B2 /* ViewController.m in Sources */,
 				2869B925289B9BED006716DE /* FEChatroomNotificationHandler.m in Sources */,
+				2861542D28ACDF6F001E33B5 /* DemoNumberScrollViewController.m in Sources */,
 				280AE2C328995469004C72B2 /* AppDelegate.m in Sources */,
 				28D112BB289B767F0074E28D /* DemoIMAccountsViewController.m in Sources */,
 				2869B91A289B9BB8006716DE /* FEColor.m in Sources */,
 				280AE30428995848004C72B2 /* DemoLabelsViewController.m in Sources */,
 				2869B924289B9BED006716DE /* FEChatRoomManager.m in Sources */,
 				2869B912289B9689006716DE /* MBProgressHUD+Add.m in Sources */,
+				2861542A28ACDF1F001E33B5 /* YLNumberScrollView.m in Sources */,
 				280AE2D42899546B004C72B2 /* main.m in Sources */,
 				2869B911289B9689006716DE /* MBProgressHUD.m in Sources */,
 				2869B926289B9BED006716DE /* FEKeyboardToolbarView.m in Sources */,
