@@ -1,9 +1,9 @@
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking" "${PODS_CONFIGURATION_BUILD_DIR}/Masonry" "${PODS_ROOT}/NIMSDK_LITE/NIMSDK"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking" "${PODS_CONFIGURATION_BUILD_DIR}/Masonry" "${PODS_CONFIGURATION_BUILD_DIR}/YYText" "${PODS_ROOT}/NIMSDK_LITE/NIMSDK"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking/AFNetworking.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Masonry/Masonry.framework/Headers"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking/AFNetworking.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Masonry/Masonry.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/YYText/YYText.framework/Headers"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_LDFLAGS = $(inherited) -l"c++" -l"sqlite3.0" -l"z" -framework "AFNetworking" -framework "AVFoundation" -framework "AudioToolbox" -framework "CoreMedia" -framework "CoreTelephony" -framework "Foundation" -framework "Masonry" -framework "NIMSDK" -framework "SystemConfiguration" -framework "UIKit" -framework "VideoToolbox"
+OTHER_LDFLAGS = $(inherited) -l"c++" -l"sqlite3.0" -l"z" -framework "AFNetworking" -framework "AVFoundation" -framework "Accelerate" -framework "AudioToolbox" -framework "CoreFoundation" -framework "CoreMedia" -framework "CoreTelephony" -framework "CoreText" -framework "Foundation" -framework "Masonry" -framework "MobileCoreServices" -framework "NIMSDK" -framework "QuartzCore" -framework "SystemConfiguration" -framework "UIKit" -framework "VideoToolbox" -framework "YYText"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.

@@ -11,6 +11,7 @@
 #import "DemoIMAccountsViewController.h"
 #import "DemoNumberScrollViewController.h"
 #import "DemoUIViewListViewController.h"
+#import "DemoYYLabelViewController.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -36,6 +37,7 @@
     [self.datas addObject:@"网易云信IM【聊天室】"];
     [self.datas addObject:@"滚动数字"];
     [self.datas addObject:@"UIView小功能"];
+    [self.datas addObject:@"YYLabel简单使用"];
 }
 
 #pragma mark UITableViewDelegate
@@ -71,6 +73,10 @@
     }
     if (row == 3) {
         DemoUIViewListViewController *vc = [DemoUIViewListViewController new];
+        [self.navigationController pushViewController:vc animated:true];
+    }
+    if (row == 4) {
+        DemoYYLabelViewController *vc = [DemoYYLabelViewController new];
         [self.navigationController pushViewController:vc animated:true];
     }
 }

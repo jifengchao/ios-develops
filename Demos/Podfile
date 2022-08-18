@@ -8,5 +8,6 @@ target 'Demos' do
     pod 'Masonry','~> 1.1'
     #网易云信IM
     pod 'NIMSDK_LITE', '9.2.5'
+    pod 'YYText', '1.0.7'
     
 end

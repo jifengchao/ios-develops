@@ -38,6 +38,7 @@
 		28CDA8F928AE3A4100DB9668 /* DemoUIViewListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CDA8F828AE3A4100DB9668 /* DemoUIViewListViewController.m */; };
 		28CDA8FD28AE3BE400DB9668 /* DemoUIViewCornersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CDA8FC28AE3BE400DB9668 /* DemoUIViewCornersViewController.m */; };
 		28CDA90128AE3D8100DB9668 /* UIView+Corners.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CDA8FF28AE3D8100DB9668 /* UIView+Corners.m */; };
+		28CDA90528AE3FF700DB9668 /* DemoYYLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CDA90428AE3FF700DB9668 /* DemoYYLabelViewController.m */; };
 		28D112BB289B767F0074E28D /* DemoIMAccountsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D112BA289B767F0074E28D /* DemoIMAccountsViewController.m */; };
 		E3D9AC278765B0B8C665ED2C /* Pods_Demos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DB113AEF1493B6DD3DF5698 /* Pods_Demos.framework */; };
 /* End PBXBuildFile section */
@@ -116,6 +117,8 @@
 		28CDA8FC28AE3BE400DB9668 /* DemoUIViewCornersViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoUIViewCornersViewController.m; sourceTree = "<group>"; };
 		28CDA8FF28AE3D8100DB9668 /* UIView+Corners.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Corners.m"; sourceTree = "<group>"; };
 		28CDA90028AE3D8100DB9668 /* UIView+Corners.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Corners.h"; sourceTree = "<group>"; };
+		28CDA90328AE3FF700DB9668 /* DemoYYLabelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoYYLabelViewController.h; sourceTree = "<group>"; };
+		28CDA90428AE3FF700DB9668 /* DemoYYLabelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoYYLabelViewController.m; sourceTree = "<group>"; };
 		28D112B7289B72080074E28D /* 网易云信IM.xmind */ = {isa = PBXFileReference; lastKnownFileType = file; path = "网易云信IM.xmind"; sourceTree = "<group>"; };
 		28D112B8289B72080074E28D /* 网易云信IM-聊天室.xmind */ = {isa = PBXFileReference; lastKnownFileType = file; path = "网易云信IM-聊天室.xmind"; sourceTree = "<group>"; };
 		28D112B9289B767F0074E28D /* DemoIMAccountsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoIMAccountsViewController.h; sourceTree = "<group>"; };
@@ -182,6 +185,7 @@
 				280AE2C528995469004C72B2 /* SceneDelegate.m */,
 				280AE2C728995469004C72B2 /* ViewController.h */,
 				280AE2C828995469004C72B2 /* ViewController.m */,
+				28CDA90228AE3FD800DB9668 /* YYLabel使用 */,
 				28CDA8F628AE39B800DB9668 /* UIView小功能 */,
 				2861542528ACDF1F001E33B5 /* 滚动数字 */,
 				28D112B6289B71B60074E28D /* 网易云信IM【聊天室】 */,
@@ -325,6 +329,15 @@
 				28CDA8FF28AE3D8100DB9668 /* UIView+Corners.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		28CDA90228AE3FD800DB9668 /* YYLabel使用 */ = {
+			isa = PBXGroup;
+			children = (
+				28CDA90328AE3FF700DB9668 /* DemoYYLabelViewController.h */,
+				28CDA90428AE3FF700DB9668 /* DemoYYLabelViewController.m */,
+			);
+			path = "YYLabel使用";
 			sourceTree = "<group>";
 		};
 		28D112B6289B71B60074E28D /* 网易云信IM【聊天室】 */ = {
@@ -542,6 +555,7 @@
 				2861542D28ACDF6F001E33B5 /* DemoNumberScrollViewController.m in Sources */,
 				28CDA8F928AE3A4100DB9668 /* DemoUIViewListViewController.m in Sources */,
 				280AE2C328995469004C72B2 /* AppDelegate.m in Sources */,
+				28CDA90528AE3FF700DB9668 /* DemoYYLabelViewController.m in Sources */,
 				28D112BB289B767F0074E28D /* DemoIMAccountsViewController.m in Sources */,
 				28CDA8FD28AE3BE400DB9668 /* DemoUIViewCornersViewController.m in Sources */,
 				2869B91A289B9BB8006716DE /* FEColor.m in Sources */,

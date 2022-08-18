@@ -2,3 +2,4 @@ ${PODS_ROOT}/Target Support Files/Pods-Demos/Pods-Demos-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework
 ${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework
 ${PODS_ROOT}/NIMSDK_LITE/NIMSDK/NIMSDK.framework
+${BUILT_PRODUCTS_DIR}/YYText/YYText.framework
