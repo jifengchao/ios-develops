@@ -35,6 +35,9 @@
 		2869B925289B9BED006716DE /* FEChatroomNotificationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2869B921289B9BED006716DE /* FEChatroomNotificationHandler.m */; };
 		2869B926289B9BED006716DE /* FEKeyboardToolbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2869B922289B9BED006716DE /* FEKeyboardToolbarView.m */; };
 		2869B927289B9BED006716DE /* FEIMRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2869B923289B9BED006716DE /* FEIMRoomViewController.m */; };
+		28CDA8F928AE3A4100DB9668 /* DemoUIViewListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CDA8F828AE3A4100DB9668 /* DemoUIViewListViewController.m */; };
+		28CDA8FD28AE3BE400DB9668 /* DemoUIViewCornersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CDA8FC28AE3BE400DB9668 /* DemoUIViewCornersViewController.m */; };
+		28CDA90128AE3D8100DB9668 /* UIView+Corners.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CDA8FF28AE3D8100DB9668 /* UIView+Corners.m */; };
 		28D112BB289B767F0074E28D /* DemoIMAccountsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D112BA289B767F0074E28D /* DemoIMAccountsViewController.m */; };
 		E3D9AC278765B0B8C665ED2C /* Pods_Demos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DB113AEF1493B6DD3DF5698 /* Pods_Demos.framework */; };
 /* End PBXBuildFile section */
@@ -107,6 +110,12 @@
 		2869B921289B9BED006716DE /* FEChatroomNotificationHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FEChatroomNotificationHandler.m; sourceTree = "<group>"; };
 		2869B922289B9BED006716DE /* FEKeyboardToolbarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FEKeyboardToolbarView.m; sourceTree = "<group>"; };
 		2869B923289B9BED006716DE /* FEIMRoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FEIMRoomViewController.m; sourceTree = "<group>"; };
+		28CDA8F728AE3A4100DB9668 /* DemoUIViewListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoUIViewListViewController.h; sourceTree = "<group>"; };
+		28CDA8F828AE3A4100DB9668 /* DemoUIViewListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoUIViewListViewController.m; sourceTree = "<group>"; };
+		28CDA8FB28AE3BE400DB9668 /* DemoUIViewCornersViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoUIViewCornersViewController.h; sourceTree = "<group>"; };
+		28CDA8FC28AE3BE400DB9668 /* DemoUIViewCornersViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoUIViewCornersViewController.m; sourceTree = "<group>"; };
+		28CDA8FF28AE3D8100DB9668 /* UIView+Corners.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Corners.m"; sourceTree = "<group>"; };
+		28CDA90028AE3D8100DB9668 /* UIView+Corners.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Corners.h"; sourceTree = "<group>"; };
 		28D112B7289B72080074E28D /* 网易云信IM.xmind */ = {isa = PBXFileReference; lastKnownFileType = file; path = "网易云信IM.xmind"; sourceTree = "<group>"; };
 		28D112B8289B72080074E28D /* 网易云信IM-聊天室.xmind */ = {isa = PBXFileReference; lastKnownFileType = file; path = "网易云信IM-聊天室.xmind"; sourceTree = "<group>"; };
 		28D112B9289B767F0074E28D /* DemoIMAccountsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoIMAccountsViewController.h; sourceTree = "<group>"; };
@@ -173,6 +182,7 @@
 				280AE2C528995469004C72B2 /* SceneDelegate.m */,
 				280AE2C728995469004C72B2 /* ViewController.h */,
 				280AE2C828995469004C72B2 /* ViewController.m */,
+				28CDA8F628AE39B800DB9668 /* UIView小功能 */,
 				2861542528ACDF1F001E33B5 /* 滚动数字 */,
 				28D112B6289B71B60074E28D /* 网易云信IM【聊天室】 */,
 				280AE2F62899579B004C72B2 /* 多标签动态宽度计算显示【支持方向】 */,
@@ -286,6 +296,35 @@
 				2869B922289B9BED006716DE /* FEKeyboardToolbarView.m */,
 			);
 			path = Room;
+			sourceTree = "<group>";
+		};
+		28CDA8F628AE39B800DB9668 /* UIView小功能 */ = {
+			isa = PBXGroup;
+			children = (
+				28CDA8F728AE3A4100DB9668 /* DemoUIViewListViewController.h */,
+				28CDA8F828AE3A4100DB9668 /* DemoUIViewListViewController.m */,
+				28CDA8FE28AE3C1500DB9668 /* Category */,
+				28CDA8FA28AE3BBD00DB9668 /* Controllers */,
+			);
+			path = "UIView小功能";
+			sourceTree = "<group>";
+		};
+		28CDA8FA28AE3BBD00DB9668 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				28CDA8FB28AE3BE400DB9668 /* DemoUIViewCornersViewController.h */,
+				28CDA8FC28AE3BE400DB9668 /* DemoUIViewCornersViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		28CDA8FE28AE3C1500DB9668 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				28CDA90028AE3D8100DB9668 /* UIView+Corners.h */,
+				28CDA8FF28AE3D8100DB9668 /* UIView+Corners.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		28D112B6289B71B60074E28D /* 网易云信IM【聊天室】 */ = {
@@ -501,8 +540,10 @@
 				280AE2C928995469004C72B2 /* ViewController.m in Sources */,
 				2869B925289B9BED006716DE /* FEChatroomNotificationHandler.m in Sources */,
 				2861542D28ACDF6F001E33B5 /* DemoNumberScrollViewController.m in Sources */,
+				28CDA8F928AE3A4100DB9668 /* DemoUIViewListViewController.m in Sources */,
 				280AE2C328995469004C72B2 /* AppDelegate.m in Sources */,
 				28D112BB289B767F0074E28D /* DemoIMAccountsViewController.m in Sources */,
+				28CDA8FD28AE3BE400DB9668 /* DemoUIViewCornersViewController.m in Sources */,
 				2869B91A289B9BB8006716DE /* FEColor.m in Sources */,
 				280AE30428995848004C72B2 /* DemoLabelsViewController.m in Sources */,
 				2869B924289B9BED006716DE /* FEChatRoomManager.m in Sources */,
@@ -514,6 +555,7 @@
 				280AE2FF28995820004C72B2 /* LabelsCell.m in Sources */,
 				2869B916289B9689006716DE /* MBProgressHUD+BWMExtension.m in Sources */,
 				280AE2C628995469004C72B2 /* SceneDelegate.m in Sources */,
+				28CDA90128AE3D8100DB9668 /* UIView+Corners.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
