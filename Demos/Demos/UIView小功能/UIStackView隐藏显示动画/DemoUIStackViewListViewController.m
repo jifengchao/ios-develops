@@ -1,16 +1,16 @@
 //
-//  DemoUIViewListViewController.m
+//  DemoUIStackViewListViewController.m
 //  Demos
 //
 //  Created by hyl on 2022/8/18.
 //
 
-#import "DemoUIViewListViewController.h"
-
-#import "DemoUIViewCornersViewController.h"
 #import "DemoUIStackViewListViewController.h"
 
-@interface DemoUIViewListViewController () <UITableViewDelegate, UITableViewDataSource>
+#import "DemoUIStackView01ViewController.h"
+#import "DemoUIStackView02ViewController.h"
+
+@interface DemoUIStackViewListViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) UITableView *demoTableView;
 
@@ -18,14 +18,14 @@
 
 @end
 
-@implementation DemoUIViewListViewController
+@implementation DemoUIStackViewListViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
     self.view.backgroundColor = UIColor.whiteColor;
-    self.navigationItem.title = @"UIView小功能";
+    self.navigationItem.title = @"UIStackView隐藏显示动画";
     
     [self setupUI];
     
@@ -34,8 +34,8 @@
     
     self.datas = @[].mutableCopy;
     
-    [self.datas addObject:@"分类-四个角不同半径的切角"];
-    [self.datas addObject:@"UIStackView隐藏显示动画"];
+    [self.datas addObject:@"布局在普通视图上"];
+    [self.datas addObject:@"布局在TableView上"];
 
 }
 
@@ -68,11 +68,11 @@
     
     NSInteger row = indexPath.row;
     if (row == 0) {
-        DemoUIViewCornersViewController *vc = [DemoUIViewCornersViewController new];
+        DemoUIStackView01ViewController *vc = [DemoUIStackView01ViewController new];
         [self.navigationController pushViewController:vc animated:true];
     }
     if (row == 1) {
-        DemoUIStackViewListViewController *vc = [DemoUIStackViewListViewController new];
+        DemoUIStackView02ViewController *vc = [DemoUIStackView02ViewController new];
         [self.navigationController pushViewController:vc animated:true];
     }
 }
