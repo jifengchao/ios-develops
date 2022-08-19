@@ -12,6 +12,7 @@
 #import "DemoNumberScrollViewController.h"
 #import "DemoUIViewListViewController.h"
 #import "DemoYYLabelViewController.h"
+#import "DemoXialaActivityIndicatorViewController.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -38,6 +39,7 @@
     [self.datas addObject:@"滚动数字"];
     [self.datas addObject:@"UIView小功能"];
     [self.datas addObject:@"YYLabel简单使用"];
+    [self.datas addObject:@"下拉头部方法+指示器转动"];
 }
 
 #pragma mark UITableViewDelegate
@@ -77,6 +79,10 @@
     }
     if (row == 4) {
         DemoYYLabelViewController *vc = [DemoYYLabelViewController new];
+        [self.navigationController pushViewController:vc animated:true];
+    }
+    if (row == 5) {
+        DemoXialaActivityIndicatorViewController *vc = [DemoXialaActivityIndicatorViewController new];
         [self.navigationController pushViewController:vc animated:true];
     }
 }

@@ -43,6 +43,8 @@
 		28CDA90E28AE5DD100DB9668 /* DemoUIStackView01ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CDA90D28AE5DD100DB9668 /* DemoUIStackView01ViewController.m */; };
 		28CDA91128AE5EE200DB9668 /* DemoUIStackView02ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CDA91028AE5EE200DB9668 /* DemoUIStackView02ViewController.m */; };
 		28CDA91428AE602F00DB9668 /* FEMatchDetailIndexDataCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CDA91228AE602F00DB9668 /* FEMatchDetailIndexDataCell.m */; };
+		28CDA91A28AE6DD100DB9668 /* FEActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CDA91628AE6DD000DB9668 /* FEActivityIndicatorView.m */; };
+		28CDA91B28AE6DD100DB9668 /* DemoXialaActivityIndicatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CDA91928AE6DD100DB9668 /* DemoXialaActivityIndicatorViewController.m */; };
 		28D112BB289B767F0074E28D /* DemoIMAccountsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D112BA289B767F0074E28D /* DemoIMAccountsViewController.m */; };
 		E3D9AC278765B0B8C665ED2C /* Pods_Demos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DB113AEF1493B6DD3DF5698 /* Pods_Demos.framework */; };
 /* End PBXBuildFile section */
@@ -131,6 +133,10 @@
 		28CDA91028AE5EE200DB9668 /* DemoUIStackView02ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoUIStackView02ViewController.m; sourceTree = "<group>"; };
 		28CDA91228AE602F00DB9668 /* FEMatchDetailIndexDataCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FEMatchDetailIndexDataCell.m; sourceTree = "<group>"; };
 		28CDA91328AE602F00DB9668 /* FEMatchDetailIndexDataCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FEMatchDetailIndexDataCell.h; sourceTree = "<group>"; };
+		28CDA91628AE6DD000DB9668 /* FEActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FEActivityIndicatorView.m; sourceTree = "<group>"; };
+		28CDA91728AE6DD000DB9668 /* DemoXialaActivityIndicatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoXialaActivityIndicatorViewController.h; sourceTree = "<group>"; };
+		28CDA91828AE6DD100DB9668 /* FEActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FEActivityIndicatorView.h; sourceTree = "<group>"; };
+		28CDA91928AE6DD100DB9668 /* DemoXialaActivityIndicatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoXialaActivityIndicatorViewController.m; sourceTree = "<group>"; };
 		28D112B7289B72080074E28D /* 网易云信IM.xmind */ = {isa = PBXFileReference; lastKnownFileType = file; path = "网易云信IM.xmind"; sourceTree = "<group>"; };
 		28D112B8289B72080074E28D /* 网易云信IM-聊天室.xmind */ = {isa = PBXFileReference; lastKnownFileType = file; path = "网易云信IM-聊天室.xmind"; sourceTree = "<group>"; };
 		28D112B9289B767F0074E28D /* DemoIMAccountsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoIMAccountsViewController.h; sourceTree = "<group>"; };
@@ -197,6 +203,7 @@
 				280AE2C528995469004C72B2 /* SceneDelegate.m */,
 				280AE2C728995469004C72B2 /* ViewController.h */,
 				280AE2C828995469004C72B2 /* ViewController.m */,
+				28CDA91528AE6D6A00DB9668 /* 下拉头部方法+指示器转动 */,
 				28CDA90228AE3FD800DB9668 /* YYLabel使用 */,
 				28CDA8F628AE39B800DB9668 /* UIView小功能 */,
 				2861542528ACDF1F001E33B5 /* 滚动数字 */,
@@ -374,6 +381,17 @@
 				28CDA91228AE602F00DB9668 /* FEMatchDetailIndexDataCell.m */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		28CDA91528AE6D6A00DB9668 /* 下拉头部方法+指示器转动 */ = {
+			isa = PBXGroup;
+			children = (
+				28CDA91728AE6DD000DB9668 /* DemoXialaActivityIndicatorViewController.h */,
+				28CDA91928AE6DD100DB9668 /* DemoXialaActivityIndicatorViewController.m */,
+				28CDA91828AE6DD100DB9668 /* FEActivityIndicatorView.h */,
+				28CDA91628AE6DD000DB9668 /* FEActivityIndicatorView.m */,
+			);
+			path = "下拉头部方法+指示器转动";
 			sourceTree = "<group>";
 		};
 		28D112B6289B71B60074E28D /* 网易云信IM【聊天室】 */ = {
@@ -583,6 +601,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28CDA91A28AE6DD100DB9668 /* FEActivityIndicatorView.m in Sources */,
 				28CDA90E28AE5DD100DB9668 /* DemoUIStackView01ViewController.m in Sources */,
 				280AE30128995820004C72B2 /* FEDirectionLabelsFlowLayout.m in Sources */,
 				2869B927289B9BED006716DE /* FEIMRoomViewController.m in Sources */,
@@ -610,6 +629,7 @@
 				2869B916289B9689006716DE /* MBProgressHUD+BWMExtension.m in Sources */,
 				280AE2C628995469004C72B2 /* SceneDelegate.m in Sources */,
 				28CDA90128AE3D8100DB9668 /* UIView+Corners.m in Sources */,
+				28CDA91B28AE6DD100DB9668 /* DemoXialaActivityIndicatorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
