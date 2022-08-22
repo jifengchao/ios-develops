@@ -11,6 +11,7 @@
 #import <Masonry/Masonry.h>
 #import "FEChatroomNotificationHandler.h"
 #import "FEChatRoomManager.h"
+#import "NetworkInterface.h"
 
 @interface FEIMRoomViewController () <UITableViewDelegate, UITableViewDataSource, FEChatroomNotificationHandlerDelegate, FEKeyboardToolbarDelegate>
 
@@ -24,8 +25,7 @@
 @property (nonatomic, strong) FEKeyboardToolbarView *keyboardView;
 
 
-
-@property (nonatomic, strong) NSMutableArray<NSString *> *displayContent;
+@property (nonatomic, strong) NSMutableArray *displayContent;
 
 @property (nonatomic, assign) BOOL isEnter;
 
@@ -38,6 +38,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.title = @"点击消息，可撤回";
+    
     [self setupUI];
     [self setupDatas];
     [self bindNotis];
@@ -195,14 +198,9 @@ void fe_main_sync_safe(dispatch_block_t block){
     insert = [self.pendingMessages subarrayWithRange:range];
     [self.pendingMessages removeObjectsInRange:range];
     
-    NSMutableArray *models = [[NSMutableArray alloc] init];
-    for (NIMMessage *message in insert) {
-        [models addObject:message.text];
-    }
-    
     NSUInteger leftPendingMessageCount = self.pendingMessages.count;
     dispatch_sync(dispatch_get_main_queue(), ^{
-        [weakSelf addModels:models];
+        [weakSelf addModels:insert];
     });
     
     if (leftPendingMessageCount)
@@ -214,7 +212,7 @@ void fe_main_sync_safe(dispatch_block_t block){
     }
 }
 
-- (void)addModels:(NSArray<NSString *> *)models
+- (void)addModels:(NSArray<NIMMessage *> *)models
 {
     NSInteger count = self.displayContent.count;
     [self.displayContent addObjectsFromArray:models];
@@ -282,12 +280,44 @@ void fe_main_sync_safe(dispatch_block_t block){
     
     UITableViewCell *cell = [UITableViewCell new];
     
-    cell.textLabel.text = self.displayContent[indexPath.row];
+    if ([self.displayContent[indexPath.row] isKindOfClass:NIMMessage.class]) {
+        NIMMessage *nimMsg = self.displayContent[indexPath.row];
+        cell.textLabel.text = nimMsg.text;
+    } else if ([self.displayContent[indexPath.row] isKindOfClass:NSString.class]) {
+        cell.textLabel.text = self.displayContent[indexPath.row];
+    } else {
+        cell.textLabel.text = @"占位~~~~";
+    }
     
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    __weak typeof(self) weakSelf = self;
+    if ([self.displayContent[indexPath.row] isKindOfClass:NIMMessage.class]) {
+        NIMMessage *nimMsg = self.displayContent[indexPath.row];
+        [UIAlertController hyl_alertWithTitle:@"确定取消此消息？" message:[NSString stringWithFormat:@"消息内容【%@】", nimMsg.text] cancelButtonName:@"取消" sureButtonName:@"确定" cancelBlock:nil sureBlock:^{
+            //调用接口
+            NSMutableDictionary *dic = @{}.mutableCopy;
+            dic[@"roomid"] = weakSelf.roomId;
+            dic[@"msgTimetag"] = @(nimMsg.timestamp * 1000);
+            dic[@"fromAcc"] = nimMsg.from;
+            dic[@"msgId"] = nimMsg.messageId;
+            dic[@"operatorAcc"] = nimMsg.from;
+            [NetworkInterface startPostRequestWithParams:dic method:@"https://app3-testing.5eplay.com/api/im/chatroom_recall" block:^(NSDictionary *response, NSError *error) {
+                if (!error) {
+                    [MBProgressHUD hyl_showInfoDetailsTitle:@"撤回成功" toView:weakSelf.view];
+                    nimMsg.text = @"~~此消息已被撤回~~";
+                    [weakSelf.tableView reloadData];
+                } else {
+                    [MBProgressHUD hyl_showInfoDetailsTitle:error.domain toView:weakSelf.view];
+                }
+            }];
+            
+        } fromVc:self];
+    } else {
+        [MBProgressHUD hyl_showInfoDetailsTitle:@"请选择IM消息" toView:self.view];
+    }
 }
 - (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return UITableViewAutomaticDimension;
