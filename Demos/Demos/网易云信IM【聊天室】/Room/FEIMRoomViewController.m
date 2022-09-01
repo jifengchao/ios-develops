@@ -283,6 +283,9 @@ void fe_main_sync_safe(dispatch_block_t block){
     if ([self.displayContent[indexPath.row] isKindOfClass:NIMMessage.class]) {
         NIMMessage *nimMsg = self.displayContent[indexPath.row];
         cell.textLabel.text = nimMsg.text;
+        if (nimMsg.remoteExt) {
+            NSLog(@"");
+        }
     } else if ([self.displayContent[indexPath.row] isKindOfClass:NSString.class]) {
         cell.textLabel.text = self.displayContent[indexPath.row];
     } else {
@@ -345,7 +348,7 @@ void fe_main_sync_safe(dispatch_block_t block){
      拉取历史消息
      */
     __weak typeof(self) weakSelf = self;
-    [self.roomManager fetchMessageHistoryWithLimit:60 result:^(NSError * _Nullable error, NSArray<NIMMessage *> * _Nullable messages) {
+    [self.roomManager fetchMessageHistoryWithLimit:100 result:^(NSError * _Nullable error, NSArray<NIMMessage *> * _Nullable messages) {
         if (messages.count) {
             [weakSelf addMessages:messages];
         }

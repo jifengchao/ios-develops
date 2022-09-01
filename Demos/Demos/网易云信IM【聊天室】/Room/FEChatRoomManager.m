@@ -110,10 +110,13 @@
 - (void)fetchMessageHistoryWithLimit:(NSUInteger)limit
                               result:(nullable void(^)(NSError * __nullable error, NSArray<NIMMessage *> * __nullable messages))result {
     NIMHistoryMessageSearchOption *option = [[NIMHistoryMessageSearchOption alloc] init];
+    option.startTime = 0;
     option.limit = limit;
-    option.order = NIMMessageSearchOrderAsc;
+    option.order = NIMMessageSearchOrderDesc;
     [[[NIMSDK sharedSDK] chatroomManager] fetchMessageHistory:self.roomId option:option result:^(NSError * _Nullable error, NSArray<NIMMessage *> * _Nullable messages) {
-        if (result) result(error, messages);
+        //倒叙
+        NSArray *array = messages.count ?[[messages reverseObjectEnumerator] allObjects] :messages;
+        if (result) result(error, array);
     }];
 }
 
@@ -132,6 +135,12 @@
     if (text.length == 0) return;
     NIMMessage *textMessage = [[NIMMessage alloc] init];
     textMessage.text = text;
+    
+    NSMutableDictionary *remoteExt = @{}.mutableCopy;
+    remoteExt[@"avatar_url"] = @"https://oss.5ewin.com/avatar/20210616/990c373e72bfc9cafe5dd1c00fb5938e.jpg";
+    remoteExt[@"username"] = @"ios_模拟器";
+    textMessage.remoteExt = remoteExt;
+    
     NIMSession *session = [NIMSession session:self.roomId type:NIMSessionTypeChatroom];
     [[NIMSDK sharedSDK].chatManager sendMessage:textMessage toSession:session error:nil];
 }
